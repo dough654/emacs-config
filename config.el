@@ -75,9 +75,15 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+;;
+
+(map! :leader
+      :desc "Project Grep"
+      "p G" #'projectile-grep)
+
 
 (setq +workspaces-on-switch-project-behavior t)
-(setq projectile-project-search-path '("~/dev/rbi" "~/dev/poker" "~/dev/personal" "~/dev/d2rmf" "~/dev/lc" "~/dev/rbi/scripts"))
+(setq projectile-project-search-path '("~/dev/rbi" "~/dev/poker" "~/dev/personal" "~/dev/d2rmf" "~/dev/lc" "~/dev/rbi/scripts" "~/dev/learning" "~/dev/learning/haskell"))
 
 (add-to-list 'load-path "~/temp/emacs-libvterm")
 (require 'vterm)
